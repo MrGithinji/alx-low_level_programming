@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (dig2 = dig1 + 1; dig2 < 10; dig2++)
 		{
-			for (dig3 = dig1 + 2; dig3 < 10; dig3++)
+			for (dig3 = dig2 + 1; dig3 < 10; dig3++)
 			{
 				putchar((dig1 % 10) + '0');
 				putchar((dig2 % 10) + '0');
