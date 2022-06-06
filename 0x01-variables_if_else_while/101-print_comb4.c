@@ -19,7 +19,7 @@ int main(void)
 			for (dig3 = dig1 + 2; dig3 < 10; dig3++)
 			{
 				putchar((dig1 % 10) + '0');
-				putchar((dig2 % 10) + '0')
+				putchar((dig2 % 10) + '0');
 				putchar((dig3 % 10) + '0');
 				if (dig1 == 7 && dig2 == 8 && dig3 == 9)
 					continue;
