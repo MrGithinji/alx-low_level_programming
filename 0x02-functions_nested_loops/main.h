@@ -1,5 +1,5 @@
-#define MAIN
 #ifndef MAIN
+#define MAIN
 /*
  * File: main.h
  * Auth: Githinji githogora
