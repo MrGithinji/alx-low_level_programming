@@ -1,8 +1,6 @@
 #ifndef MAIN
 #define MAIN
 
-int _isupper(char c);
-
 int _putchar(char c);
 
 int _isupper(int c);
