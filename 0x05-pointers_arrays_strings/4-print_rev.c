@@ -13,7 +13,7 @@ void print_rev(char *s)
 	int j;
 	int k;
 
-	j = strlen(str);
+	j = strlen(s);
 	k = j - 1;
 
 	while (str[k])
