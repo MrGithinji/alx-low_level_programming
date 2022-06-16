@@ -9,6 +9,8 @@
  * @dest: string 2
  * @n: n or more bytes in a string
  *
+ *
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -16,11 +18,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	int i;
 
-	while (dest[i] !='\0')
+	while (dest[i] != '\0')
 	{
 		strcat(dest, src);
 		printf("%s", dest);
 	}
 
-	return(dest);
+	return (dest);
 }
