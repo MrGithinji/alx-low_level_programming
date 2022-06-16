@@ -13,8 +13,14 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	strcat(dest, src);
-	printf("%s", dest);
 
-	return(0);	
+	int i;
+
+	while (dest[i] !='\0')
+	{
+		strcat(dest, src);
+		printf("%s", dest);
+	}
+
+	return(dest);
 }
