@@ -4,17 +4,19 @@
 
 /**
  * reverse_array - reverses an arry
- *
- * Return: 0
+ * @s: sample string
+ * Return: *s
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	while (*[i])
+	int i = 0;
+
+	while (*(s + i))
 	{
-		_putchar(toupper(str[i]));
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
 		i++;
 	}
-
-	return (0);
+	return (s);
 }
