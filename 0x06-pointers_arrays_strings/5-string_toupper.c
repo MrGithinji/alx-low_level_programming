@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * reverse_array - reverses an arry
+ * *string_toupper - convert a string to uppercase
  * @s: sample string
  * Return: *s
  */
