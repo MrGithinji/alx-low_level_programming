@@ -16,13 +16,21 @@
 char *_strncat(char *dest, char *src, int n)
 {
 
-	int i;
+	int x, y;
 
-	while (dest[i] != '\0')
+	x = 0;
+	y = 0;
+
+	while (dest[x] != '\0')
 	{
-		strcat(dest, src);
-		printf("%s", dest);
+		x++;
 	}
 
+	while (src[y] != 0 && b < n)
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
 	return (dest);
 }
