@@ -4,13 +4,15 @@
  * *_strcat - function that concatenates two strings.
  *
  * @src: string 1
- * @dest: src will be appended here
+ * @6dest: src will be appended here
  *
  * Return: pointer to the resulting string dest
  */
 
 char *_strcat(char *dest, char *src)
 {
+	char *a = dest;
+
 	while (*dest++)
 		dest--;
 	while (*src)
@@ -20,5 +22,5 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 	*dest = '\0';
-	return (dest);
+	return (a);
 }
