@@ -28,6 +28,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (y < n && *(src + y))
 	{
+		*(dest + i) = *(src + j);
 		x++;
 		y++;
 	}
