@@ -13,12 +13,12 @@ int _strlen_recursion(char *s)
 	int j;
 	int k;
 
-	j = strlen(str);
+	j = strlen(s);
 	k = j - 1;
 
-	while (str[k])
+	while (s[k])
 	{
-		_putchar(str[k]);
+		_putchar(s[k]);
 		k--;
 	}
 }
