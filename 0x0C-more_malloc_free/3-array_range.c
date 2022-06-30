@@ -1,27 +1,36 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * _calloc - creates an array of integers
- * @nmemb: array num
- * @size: size of ea array element
- * Return: 0
+ * *array_range - creates an array of integers
+ * @min: int type
+ * @max: int type
+ * Return:  return pointer to array
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+
+int *array_range(int min, int max)
 {
-	char *arr;
-	unsigned int i;
+	int *ptr;
+	int arr;
 
-	if (nmemb == 0 || size == 0)
+	if (min > max)
+	{
 		return (NULL);
+	}
 
-	arr = malloc(nmemb * size);
-	if (arr == NULL)
+	ptr = malloc(sizeof(int) * (max - min + 1));
+	if (ptr == NULL)
+	{
 		return (NULL);
-
-	for (i = 0; i < (nmemb * size); i++)
-		arr[i] = 0;
-
-	return (arr);
+	}
+	arr = 0;
+	while (min <= max)
+	{
+		ptr[arr] = min;
+		min++;
+		arr++;
+	}
+	return (ptr);
 }
